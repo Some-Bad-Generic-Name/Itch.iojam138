@@ -1,0 +1,21 @@
+THEME: HACK
+
+1. You are a hacker
+	- Your job is to hack into groups to gather information
+	- You make hackey games/products
+	- 
+2. Hack and Slash
+	- possibly a rogue like
+3. Hug All Cats Konnor
+	- A game where your name is Konnor and you are searching for and hugging cats (possiblebly random generation)
+4. You are an apprentice lumber jack and you hack down trees
+5. You are a taxi driver (A definition of hack is to operate a taxicab)
+
+Likely:
+	1. You are a hacker
+		- You make hackey games/products
+	2. Hack and Slash
+		- possibly a rogue like
+		- Attack enemys and hack terminals
+	4. You are an apprentice lumber jack and you hack down trees
+	5. You are a taxi driver (A definition of hack is to operate a taxicab)

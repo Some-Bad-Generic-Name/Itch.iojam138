@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://grass.jpg" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32.2861, 31.8642 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31.9243, 32.2079 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 200, 50 )
+script = ExtResource( 1 )
+speed = 400
+max_fuel = 1000.0
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+process_mode = 0
+smoothing_enabled = true
+editor_draw_drag_margin = true
+
+[node name="Grass" type="StaticBody2D" parent="."]
+position = Vector2( 100, 400 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Grass"]
+position = Vector2( -0.225937, 0.225922 )
+texture = ExtResource( 3 )
+
+[node name="Grass2" type="StaticBody2D" parent="."]
+position = Vector2( 163.71, 400 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass2"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Grass2"]
+texture = ExtResource( 3 )
